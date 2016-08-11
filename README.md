@@ -1,2 +1,2 @@
 # Michelle2213.github.io
-Michelle y "Hector" es genial! :3
+Michelle y Héctor son geniales! :3

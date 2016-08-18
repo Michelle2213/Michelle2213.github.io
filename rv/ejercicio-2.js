@@ -17,6 +17,8 @@ var esfera= new THREE.Mesh(forma2,material2);
 
 cilindro.rotateX(-Math.PI/4);
 cilindro.rotateY(Math.PI/4);
+esfera.rotateX(-Math.PI/4);
+esfera.rotateY(Math.PI/4);
 
 escena.add(cilindro);
 escena.add(esfera);

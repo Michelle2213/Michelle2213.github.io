@@ -7,11 +7,15 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.95,window.innerHeight*.95);
 document.body.appendChild(renderizador.domElement);
 
-var forma= new THREE.BoxGeometry(1,1,1);
-var material= new THREE.MeshNormalMaterial();
-var cubo= new THREE.Mesh(forma,material);
-cubo.rotateX(-Math.PI/4);
-cubo.rotateY(Math.PI/4);
+var forma1= new THREE.CylinderGeometry(5,5,40,64);
+var material1= new THREE.MeshNormalMaterial({color: 0xffff00});
+var cilindro= new THREE.Mesh(forma1,material1);
 
-escena.add(cubo);
+var forma2= new THREE.SphereGeometry(10,64,64);
+var material2= new THREE.MeshNormalMaterial({color: 0xffff00});
+var esfera= new THREE.Mesh(forma2,material2);
+
+
+escena.add(cilindro);
+escena.add(esfera);
 renderizador.render(escena,camara);

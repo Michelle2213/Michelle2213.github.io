@@ -10,9 +10,8 @@ document.body.appendChild(renderizador.domElement);
 var forma= new THREE.BoxGeometry(1,1,1);
 var material= new THREE.MeshNormalMaterial();
 var cubo= new THREE.Mesh(forma,material);
-cubo.rotateX(-Math.PI/4); <!--toma en cuenta radianes-->
+cubo.rotateX(-Math.PI/4);
 cubo.rotateY(Math.PI/4);
 
-<!--generación de la imagen>
 escena.add(cubo);
 renderizador.render(escena,camara);

@@ -12,7 +12,7 @@ var material1= new THREE.MeshBasicMaterial({color: 0x8A4B08});
 var cilindro= new THREE.Mesh(forma1,material1);
 
 var forma2= new THREE.SphereGeometry(5,64,64);
-var material2= new THREE.MeshBaasicMaterial({color: 0x00ff00});
+var material2= new THREE.MeshBasicMaterial({color: 0x00ff00});
 var esfera= new THREE.Mesh(forma2,material2);
 
 escena.add(cilindro);

@@ -1,5 +1,5 @@
-var troncoForma= new THREE.CylinderGeometry(0.25, 0.5, 1);
-var esferaForma= new THREE.SphereGeometry(0.65);
+var troncoForma= new THREE.CylinderGeometry(.25, .5, 1);
+var esferaForma= new THREE.SphereGeometry(.65);
 esferaForma.translate(0,1,0);
 
 var troncoMalla= new THREE.Mesh(troncoForma);
@@ -20,6 +20,6 @@ var camara= new THREE.PerspectiveCamera();
 camara.position.z=5;
 
 renderizador= new THREE.WebGLRenderer();
-renderizador.setSize(window.innerHeight*0.95, widow.innerHeight*0.95);
+renderizador.setSize(window.innerHeight*0.95, window.innerHeight*0.95);
 document.body.appendChild(renderizador,domElement);
 renderizador.render(escena,camara);

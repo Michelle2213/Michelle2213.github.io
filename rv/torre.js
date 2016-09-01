@@ -17,7 +17,6 @@ var baseforma= new THREE.LatheGeometry(puntos);
 var basemalla= new THREE.Mesh( baseforma);
 
 var picos= new THREE.BoxGeometry(10,20,10);
-picos.translate(0,135,0);
 var picosmalla= new THREE.Mesh(picos);
 
 var torre= new THREE.Geometry();

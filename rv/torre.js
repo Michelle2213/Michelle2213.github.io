@@ -17,11 +17,12 @@ var baseforma= new THREE.LatheGeometry(puntos);
 var basemalla= new THREE.Mesh( baseforma);
 
 var picos= new THREE.BoxGeometry(10,20,10);
+picos.translate(0,125,0);
 var picosmalla= new THREE.Mesh(picos);
 
 var torre= new THREE.Geometry();
-torre.merge(baseforma.geometry, baseforma.matrix);
-torre.merge(picos.geometry, picos.matrix);
+torre.merge(basemalla.geometry, basemalla.matrix);
+torre.merge(picosmalla.geometry, picosmalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var torremalla= new THREE.Mesh(torre, material);

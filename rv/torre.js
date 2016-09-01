@@ -8,7 +8,9 @@ puntos.push( new THREE.Vector2(40,30));
 puntos.push( new THREE.Vector2(25,45));
 puntos.push( new THREE.Vector2(25,95));
 puntos.push( new THREE.Vector2(40,110));
-puntos.push( new THREE.Vector2(0,110));
+puntos.push( new THREE.Vector2(60,110));
+puntos.push( new THREE.Vector2(60,125));
+puntos.push( new THREE.Vector2(0,125));
 puntos.push( new THREE.Vector2(0,0));
 
 var baseforma= new THREE.LatheGeometry(puntos);

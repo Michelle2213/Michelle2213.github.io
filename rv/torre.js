@@ -8,20 +8,29 @@ puntos.push( new THREE.Vector2(40,30));
 puntos.push( new THREE.Vector2(25,45));
 puntos.push( new THREE.Vector2(25,95));
 puntos.push( new THREE.Vector2(40,110));
-puntos.push( new THREE.Vector2(60,110));
-puntos.push( new THREE.Vector2(60,125));
+puntos.push( new THREE.Vector2(50,110));
+puntos.push( new THREE.Vector2(50,125));
 puntos.push( new THREE.Vector2(0,125));
 puntos.push( new THREE.Vector2(0,0));
 
 var baseforma= new THREE.LatheGeometry(puntos);
+var basemalla= new THREE.Mesh( baseforma);
 
-var basematerial= new THREE.MeshNormalMaterial();
+var picos= new THREE.BoxGeometry(10,20,10);
+esferaForma.translate(0,135,0);
+var picosmalla= new THREE.Mesh(picos);
 
-var basemalla= new THREE.Mesh( baseforma, basematerial);
-basemalla.rotateX(Math.PI/6);
+var torre= new THREE.Geometry();
+torre.merge(baseforma.geometry, baseforma.matrix);
+torre.merge(picos.geometry, picos.matrix);
+
+var material= new THREE.MeshNormalMaterial();
+var torremalla= new THREE.Mesh(torre, material);
+
+torremalla.rotateX(Math.PI/6);
 
 var escena= new THREE.Scene();
-escena.add(basemalla);
+escena.add(torremalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z= 500;

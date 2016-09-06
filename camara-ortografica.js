@@ -11,3 +11,4 @@ camara.far= 1000;
 camara.updateProjectionMatrix();
 
 camara.position.z=100;
+

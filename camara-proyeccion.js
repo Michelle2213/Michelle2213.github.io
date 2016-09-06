@@ -27,4 +27,4 @@ escena.add( cubo );
 var renderizador= new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderizador.domElement);
-renderizador.render(escena,camara;)
+renderizador.render(escena,camara);

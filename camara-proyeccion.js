@@ -1,4 +1,4 @@
-//Camara Proyeccion
+//Camara Proyeccion (piramide)
 
 var campoVision=45; //grados
 var relacionAspecto= window.innerWidth / window.innerHeight;

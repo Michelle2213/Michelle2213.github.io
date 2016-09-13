@@ -5,7 +5,7 @@ var malla= new THREE.Mesh(forma,material);
 var escena= new THREE.Scene();
 escena.add(malla);
 
-var camara= new THREE.PerspectiveCamara();
+var camara= new THREE.PerspectiveCamera();
 camara.position.z=5;
 
 var lienzo= document.getElementById("lambertMaterial");

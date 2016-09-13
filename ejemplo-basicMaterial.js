@@ -1,14 +1,20 @@
+var luzPuntual= new THREE.PointLight(0xFFFFFF);
+luzPuntual.position.x=10;
+luzPuntual.position.y=10;
+luzPuntual.position.z=10;
+
 var forma= new THREE.SphereGeometry(1);
 var material= new THREE.MeshBasicMaterial({color: 0x00ff00});
 var malla= new THREE.Mesh(forma,material);
 
 var escena=new THREE.Scene();
 escena.add(malla);
+escena.add(luzPuntal);
 
 var camara=new THREE.PerspectiveCamera();
 camara.position.z=5
 
-var lienzo= document.getElementById("basicMaterial");
+var lienzo= document.getElementById("luzPuntual");
 var renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
 
 renderizador.setSize(600,600);

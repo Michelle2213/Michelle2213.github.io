@@ -25,7 +25,7 @@ torre.merge(basemalla.geometry, basemalla.matrix);
 torre.merge(picosmalla.geometry, picosmalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
-material.opacity=0.5;
+material.opacity=0.1;
 var torremalla= new THREE.Mesh(torre, material);
 
 torremalla.rotateX(Math.PI/6);

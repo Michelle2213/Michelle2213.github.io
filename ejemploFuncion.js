@@ -19,7 +19,7 @@ var loop= function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
   malla.rotateY(0.01);
-  malla.position.set(i+1,j+1);
+  malla.position.set(i+1,j+1,0);
   if (i>=700){
     i=0;
     j=0;

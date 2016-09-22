@@ -7,7 +7,7 @@ function init(p){
   renderizador= new THREE.WebGLRenderer();
   renderizador.setSize(700,700);
   document.body.appendChild( renderizador.domElement );
-  step=0.1;
+  step=0.01;
   }
   
 /*var main= function(p){
@@ -27,7 +27,6 @@ var loop= function(){
 }
 
 var escena, camara, renderizador,malla,step;
-var i=0,j=0;
 init(1);
 loop();
 //main(init)

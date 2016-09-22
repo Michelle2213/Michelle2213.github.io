@@ -20,9 +20,9 @@ var loop= function(){
   renderizador.render(escena,camara);
   malla.rotateY(0.01);
   malla.position.x=i++;
-  if (i>=100){
-    i=-100;
-    j=-100;
+  if (i>=10){
+    i=-10;
+    j=-10;
   }
 }
 

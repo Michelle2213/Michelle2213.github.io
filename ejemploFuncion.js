@@ -5,6 +5,8 @@ function init(p){
   camara= new THREE.PerspectiveCamera();
   renderizador= new THREE.WebGLRender();
   renderizador.setSize(700,700);
+  document.body.appendChild( renderizador.domElement );
+  renderizador.render( escena, camara);
   }
   
 var main= function(p){

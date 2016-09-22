@@ -7,7 +7,7 @@ function init(p){
   renderizador= new THREE.WebGLRenderer();
   renderizador.setSize(700,700);
   document.body.appendChild( renderizador.domElement );
-  step=1;
+  step=0.1;
   }
   
 /*var main= function(p){
@@ -22,7 +22,7 @@ var loop= function(){
   malla.rotateY(0.01);
   if (Math.abs(malla.position.x)>=10){
     step=-step;
-    malla.positionx+=step;
+    malla.position.x+=step;
   }
 }
 

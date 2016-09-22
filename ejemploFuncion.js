@@ -19,7 +19,9 @@ function init(p){
 var loop= function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
+  malla.rotateX(0.01);
   malla.rotateY(0.01);
+  malla.rotateZ(0.01);
   if (Math.abs(malla.position.x)>=4){
     step=-step;
   }

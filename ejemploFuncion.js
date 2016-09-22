@@ -13,7 +13,7 @@ function init(p){
   p(1);
   renderizador.render(escena,camara);
   }
-*//
+*/
   
 var loop= function(){
   requestAnimationFrame(loop);

@@ -7,7 +7,7 @@ function init(p){
   renderizador= new THREE.WebGLRenderer();
   renderizador.setSize(700,700);
   document.body.appendChild( renderizador.domElement );
-  step=0.1;
+  step=0.01;
   }
   
 /*var main= function(p){
@@ -20,7 +20,7 @@ var loop= function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
   malla.rotateY(0.01);
-  if (Math.abs(malla.position.x)>=10){
+  if (Math.abs(malla.position.x)>=5){
     step=-step;
   }
   malla.position.x+=step;

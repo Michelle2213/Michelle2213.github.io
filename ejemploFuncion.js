@@ -7,7 +7,7 @@ function init(p){
   renderizador= new THREE.WebGLRenderer();
   renderizador.setSize(700,700);
   document.body.appendChild( renderizador.domElement );
-  step=0.01;
+  step=0.1;
   }
   
 /*var main= function(p){

@@ -16,7 +16,7 @@ TEXTURA.retrollamada= function( textura ){
    
    var lienzo= document.getElementById("ejemplo-caja");
    TEXTURA.renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
-   TEXTURA.renderizador.setSize(600, 600);
+   TEXTURA.renderizador.setSize(window.innerWidth,window.innerHeight);
   }
   
 TEXTURA.loop= function(){

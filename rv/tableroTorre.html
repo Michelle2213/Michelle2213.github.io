@@ -28,7 +28,7 @@ var escena = new THREE.Scene();
   }
   
   TEXTURABLANCO.retrollamada= function(textura){
-    materialBlanco = new THREE.MeshLambertMaterial({map: textura});
+    materialBlanco = new THREE.MeshBasicMaterial({map: textura});
   }
   
   
@@ -39,7 +39,7 @@ var escena = new THREE.Scene();
   }
   
   TEXTURANEGRO.retrollamada= function(textura){
-    materialNegro = new THREE.MeshLambertMaterial({map: textura});
+    materialNegro = new THREE.MeshBasicMaterial({map: textura});
   }
   
   TEXTURANEGRO.loop=function(){

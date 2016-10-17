@@ -165,7 +165,7 @@ CONSTRUCTOR.setup = function(){
     //peon1.scale.y=0.2;
     //peon1.scale.z=0.2;
     
-    /*for(var i=0;i<8;i++){
+      for(var i=0;i<8;i++){
       var peon= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
       peon.position.x=-35+(i*10);
       peon.position.y=2.5;
@@ -175,9 +175,9 @@ CONSTRUCTOR.setup = function(){
       peon.scale.z=0.2;
       var peonesBlancosMalla = new THREE.Mesh(peon);
       CONSTRUCTOR.escena.add(peonesBlancosMalla);
-      }*/
+      }
     
-    CONSTRUCTOR.PeonesBlancos = function (texturaBlanco){
+    /*CONSTRUCTOR.PeonesBlancos = function (texturaBlanco){
     for(var i=0;i<8;i++){
       var peonB= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
       //peonB.traslate(-35+(i*10),2.5,-25);
@@ -191,7 +191,7 @@ CONSTRUCTOR.setup = function(){
       var peonBMalla = new THREE.Mesh(peonB,material);
       CONSTRUCTOR.escena.add(peonBMalla);
     }
-    }
+    }*/
 
     
 
@@ -213,7 +213,7 @@ CONSTRUCTOR.setup = function(){
     CONSTRUCTOR.escena.add(torre2);
     CONSTRUCTOR.escena.add(torre3);
     CONSTRUCTOR.escena.add(torre4);
-    CONSTRUCTOR.PeonesBlancos(CONSTRUCTOR.marmolBlanco);
+    //CONSTRUCTOR.PeonesBlancos(CONSTRUCTOR.marmolBlanco);
     CONSTRUCTOR.escena.add(luz);
     CONSTRUCTOR.renderizador.shadowMapEnabled = true;
     luz.castShadow =true;

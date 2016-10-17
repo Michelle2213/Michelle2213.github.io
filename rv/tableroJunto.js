@@ -157,13 +157,24 @@ CONSTRUCTOR.setup = function(){
     torre4.scale.y=0.2;
     torre4.scale.z=0.2;
     
-    var peon1= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-    peon1.position.x=-35;
-    peon1.position.y=2.5;
-    peon1.position.z=-25;
-    peon1.scale.x=0.2;
-    peon1.scale.y=0.2;
-    peon1.scale.z=0.2;
+    //var peon1= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
+    //peon1.position.x=-35;
+    //peon1.position.y=2.5;
+    //peon1.position.z=-25;
+    //peon1.scale.x=0.2;
+    //peon1.scale.y=0.2;
+    //peon1.scale.z=0.2;
+    
+    for(var i=0;i<8;i++){
+      var peon= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
+      peon.position.x=-35+(i*10);
+      peon.position.y=2.5;
+      peon.position.z=-25;
+      peon.scale.x=0.2;
+      peon.scale.y=0.2;
+      peon.scale.z=0.2;
+    }
+    
 
     //--------------- CAMARA ---------------
     CONSTRUCTOR.camara = new THREE.PerspectiveCamera();

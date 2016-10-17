@@ -180,10 +180,10 @@ CONSTRUCTOR.setup = function(){
     CONSTRUCTOR.PeonesBlancos = function (texturaBlanco){
     for(var i=0;i<8;i++){
       var peonB= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-      peonB.traslate(-35+(i*10),2.5,-25);
-      //peonesBlancos.position.x=-35+(i*10);
-      //peonesBlancos.position.y=2.5;
-      //peonesBlancos.position.z=-25;
+      //peonB.traslate(-35+(i*10),2.5,-25);
+      peonB.position.x=-35+(i*10);
+      peonB.position.y=2.5;
+      peonB.position.z=-25;
       peonB.scale.x=0.2;
       peonB.scale.y=0.2;
       peonB.scale.z=0.2;

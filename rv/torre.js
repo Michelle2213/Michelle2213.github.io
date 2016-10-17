@@ -26,12 +26,12 @@ torre.merge(esferamalla.geometry, esferamalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var torremalla= new THREE.Mesh(torre, material);
 
-torremalla.rotateX(Math.PI/6);
+//torremalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(torremalla);
 
 var camara= new THREE.PerspectiveCamera();
-camara.position.z= 500;
+camara.position.z= 300;
 
 var renderizador= new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95);

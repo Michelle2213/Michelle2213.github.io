@@ -10,7 +10,6 @@ puntos.push( new THREE.Vector2(5,25));
 puntos.push( new THREE.Vector2(5,35));
 puntos.push( new THREE.Vector2(15,35));
 puntos.push( new THREE.Vector2(0,40));
-puntos.push( new THREE.Vector2(0,0));
 
 var baseforma= new THREE.LatheGeometry(puntos);
 var basemalla= new THREE.Mesh( baseforma);

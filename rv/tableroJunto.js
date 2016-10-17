@@ -158,12 +158,12 @@ CONSTRUCTOR.setup = function(){
     torre4.scale.z=0.2;
     
     var peon1= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-    torre4.position.x=-25;
-    torre4.position.y=2.5;
-    torre4.position.z=-35;
-    torre4.scale.x=0.02;
-    torre4.scale.y=0.02;
-    torre4.scale.z=0.02;
+    peon1.position.x=-25;
+    peon1.position.y=2.5;
+    peon1.position.z=-35;
+    peon1.scale.x=0.2;
+    peon1.scale.y=0.2;
+    peon1.scale.z=0.2;
 
     //--------------- CAMARA ---------------
     CONSTRUCTOR.camara = new THREE.PerspectiveCamera();

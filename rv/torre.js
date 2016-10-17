@@ -25,7 +25,7 @@ torre.merge(esferamalla.geometry, esferamalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var torremalla= new THREE.Mesh(torre, material);
 
-torremalla.rotateX(Math.PI/6);
+//torremalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(torremalla);
 

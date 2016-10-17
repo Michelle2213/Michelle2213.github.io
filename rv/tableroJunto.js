@@ -66,11 +66,12 @@ CONSTRUCTOR.Peon=function(textura){
     puntaPeonForma.translate(0,45,0);
     var puntaPeonMalla =new THREE.Mesh(puntaPeonForma); 
     peonForma.merge(puntaPeonMalla.geometry, puntaPeonMalla.matrix);
-    }
-    
+        
     THREE.Mesh.call(this, peonForma, new THREE.MeshLambertMaterial({map:textura}));
     this.castShadow=true;
     this.receiveShadow=true;
+    
+}
 
 CONSTRUCTOR.Peon.prototype=new THREE.Mesh();
 

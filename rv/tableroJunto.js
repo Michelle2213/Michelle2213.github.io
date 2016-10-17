@@ -152,7 +152,7 @@ CONSTRUCTOR.loop = function(){
   if(CONSTRUCTOR.madera!==undefined && CONSTRUCTOR.torreBlanca!==undefined && CONSTRUCTOR.marmolBlanco!==undefined && CONSTRUCTOR.marmolNegro!==undefined && !setupDone){
       CONSTRUCTOR.setup();
   }
-   CONSTRUCTOR.renderizador.render(CONSTRUCTOR.escena, CONSTRUCTOR.camara);
+   renderizador.render(CONSTRUCTOR.escena, CONSTRUCTOR.camara);
 }
 
 CONSTRUCTOR.TexturaSetup= function(){

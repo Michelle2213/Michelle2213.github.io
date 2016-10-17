@@ -1,31 +1,29 @@
 var puntos= [];
 
 puntos.push( new THREE.Vector2(0,0));
-puntos.push( new THREE.Vector2(60,0));
-puntos.push( new THREE.Vector2(60,15));
-puntos.push( new THREE.Vector2(40,15));
-puntos.push( new THREE.Vector2(40,30));
-puntos.push( new THREE.Vector2(25,45));
-puntos.push( new THREE.Vector2(25,95));
-puntos.push( new THREE.Vector2(40,110));
-puntos.push( new THREE.Vector2(50,110));
-puntos.push( new THREE.Vector2(50,125));
-puntos.push( new THREE.Vector2(0,125));
+puntos.push( new THREE.Vector2(20,0));
+puntos.push( new THREE.Vector2(20,10));
+puntos.push( new THREE.Vector2(15,10));
+puntos.push( new THREE.Vector2(15,15));
+puntos.push( new THREE.Vector2(10,15));
+puntos.push( new THREE.Vector2(5,25));
+puntos.push( new THREE.Vector2(5,35));
+puntos.push( new THREE.Vector2(15,35));
+puntos.push( new THREE.Vector2(0,40));
 puntos.push( new THREE.Vector2(0,0));
 
 var baseforma= new THREE.LatheGeometry(puntos);
 var basemalla= new THREE.Mesh( baseforma);
 
-var picos= new THREE.BoxGeometry(10,20,10);
-picos.translate(0,125,0);
-var picosmalla= new THREE.Mesh(picos);
+var esfera= new THREE.SphereGeometry(10);
+esfera.translate(0,55,0);
+var esferamalla= new THREE.Mesh(esfera);
 
 var torre= new THREE.Geometry();
 torre.merge(basemalla.geometry, basemalla.matrix);
-torre.merge(picosmalla.geometry, picosmalla.matrix);
+torre.merge(esferamalla.geometry, esferamalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
-material.opacity=0.1;
 var torremalla= new THREE.Mesh(torre, material);
 
 torremalla.rotateX(Math.PI/6);

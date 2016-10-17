@@ -173,6 +173,9 @@ CONSTRUCTOR.setup = function(){
       peon.scale.x=0.2;
       peon.scale.y=0.2;
       peon.scale.z=0.2;
+      var peonesBlancosMalla = new THREE.Mesh(peon);
+      CONSTRUCTOR.escena.add(peonesBlancosMalla);
+      }
     }
     
 

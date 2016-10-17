@@ -161,15 +161,15 @@ CONSTRUCTOR.setup = function(){
     torre4.position.x=-25;
     torre4.position.y=2.5;
     torre4.position.z=-35;
-    torre4.scale.x=0.2;
-    torre4.scale.y=0.2;
-    torre4.scale.z=0.2;
+    torre4.scale.x=0.02;
+    torre4.scale.y=0.02;
+    torre4.scale.z=0.02;
 
     //--------------- CAMARA ---------------
     CONSTRUCTOR.camara = new THREE.PerspectiveCamera();
-    CONSTRUCTOR.camara.position.y = 200;
-    CONSTRUCTOR.camara.position.x = 200;
-    CONSTRUCTOR.camara.position.z = 200;
+    CONSTRUCTOR.camara.position.y = 100;
+    CONSTRUCTOR.camara.position.x = 100;
+    CONSTRUCTOR.camara.position.z = 100;
     CONSTRUCTOR.camara.lookAt(new THREE.Vector3(0,0,0));
     var lienzo = document.getElementById("tablero");
     CONSTRUCTOR.renderizador = new THREE.WebGLRenderer({canvas: lienzo, antialias: true});

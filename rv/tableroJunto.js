@@ -42,20 +42,20 @@ CONSTRUCTOR.Torre.prototype=new THREE.Mesh();
 
 //------------PEON----------
 CONSTRUCTOR.Peon=function(textura){    
-    var puntos=[];
+    var puntospeon=[];
     
-    puntos.push( new THREE.Vector2(0,0));
-    puntos.push( new THREE.Vector2(20,0));
-    puntos.push( new THREE.Vector2(20,10));
-    puntos.push( new THREE.Vector2(15,10));
-    puntos.push( new THREE.Vector2(15,15));
-    puntos.push( new THREE.Vector2(10,15));
-    puntos.push( new THREE.Vector2(5,25));
-    puntos.push( new THREE.Vector2(5,35));
-    puntos.push( new THREE.Vector2(15,35));
-    puntos.push( new THREE.Vector2(0,40));
+    puntospeon.push( new THREE.Vector2(0,0));
+    puntospeon.push( new THREE.Vector2(20,0));
+    puntospeon.push( new THREE.Vector2(20,10));
+    puntospeon.push( new THREE.Vector2(15,10));
+    puntospeon.push( new THREE.Vector2(15,15));
+    puntospeon.push( new THREE.Vector2(10,15));
+    puntospeon.push( new THREE.Vector2(5,25));
+    puntospeon.push( new THREE.Vector2(5,35));
+    puntospeon.push( new THREE.Vector2(15,35));
+    puntospeon.push( new THREE.Vector2(0,40));
 
-    var basePeonForma= new THREE.LatheGeometry(puntos);
+    var basePeonForma= new THREE.LatheGeometry(puntospeon);
     var basePeonMalla = new THREE.Mesh(basePeonForma);
 
     var peonForma= new THREE.Geometry();

@@ -158,9 +158,9 @@ CONSTRUCTOR.setup = function(){
     torre4.scale.z=0.2;
     
     var peon1= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-    peon1.position.x=-25;
+    peon1.position.x=-35;
     peon1.position.y=2.5;
-    peon1.position.z=-35;
+    peon1.position.z=-25;
     peon1.scale.x=0.2;
     peon1.scale.y=0.2;
     peon1.scale.z=0.2;

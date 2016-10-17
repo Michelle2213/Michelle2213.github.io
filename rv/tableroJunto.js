@@ -71,7 +71,7 @@ CONSTRUCTOR.Peon=function(textura){
     THREE.Mesh.call(this, peonForma, new THREE.MeshLambertMaterial({map:textura}));
     this.castShadow=true;
     this.receiveShadow=true;
-}
+
 CONSTRUCTOR.Peon.prototype=new THREE.Mesh();
 
 

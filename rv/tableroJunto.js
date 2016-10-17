@@ -152,7 +152,7 @@ CONSTRUCTOR.loop = function(){
   if(CONSTRUCTOR.madera!==undefined && CONSTRUCTOR.torreBlanca!==undefined && CONSTRUCTOR.marmolBlanco!==undefined && CONSTRUCTOR.marmolNegro!==undefined && !setupDone){
       CONSTRUCTOR.setup();
   }
-   renderizador.render(CONSTRUCTOR.escena, CONSTRUCTOR.camara);
+   CONSTRUCTOR.renderizador.render(CONSTRUCTOR.escena, CONSTRUCTOR.camara);
 }
 
 CONSTRUCTOR.TexturaSetup= function(){
@@ -165,7 +165,7 @@ CONSTRUCTOR.TexturaSetup= function(){
                   function(textura){ CONSTRUCTOR.marmolBlanco = textura;});
     cargador.load("texturaMarmolNegro.jpg",
                   function(textura){ CONSTRUCTOR.marmolNegro = textura;});
-    cargador.load("texturaMadera.jpg",
+    cargador.load("texturaMadera.JPG",
                   function(textura){ CONSTRUCTOR.madera = textura;});
     
 }

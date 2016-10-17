@@ -176,7 +176,6 @@ CONSTRUCTOR.setup = function(){
       var peonesBlancosMalla = new THREE.Mesh(peon);
       CONSTRUCTOR.escena.add(peonesBlancosMalla);
       }
-    }
     
 
     //--------------- CAMARA ---------------

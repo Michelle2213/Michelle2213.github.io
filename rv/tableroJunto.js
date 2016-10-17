@@ -188,6 +188,7 @@ CONSTRUCTOR.setup = function(){
       peonesBlancos.scale.z=0.2;
       var material = new THREE.MeshLambertMaterial({map: texturaBlanco});
       var peonesBlancosMalla = new THREE.Mesh(peonesBlancos,material);
+      CONSTRUCTOR.escena.add(peonesBlancosMalla);
     }
     }
 

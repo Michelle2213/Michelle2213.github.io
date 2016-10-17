@@ -165,7 +165,7 @@ CONSTRUCTOR.setup = function(){
     //peon1.scale.y=0.2;
     //peon1.scale.z=0.2;
     
-    for(var i=0;i<8;i++){
+    /*for(var i=0;i<8;i++){
       var peon= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
       peon.position.x=-35+(i*10);
       peon.position.y=2.5;
@@ -175,7 +175,22 @@ CONSTRUCTOR.setup = function(){
       peon.scale.z=0.2;
       var peonesBlancosMalla = new THREE.Mesh(peon);
       CONSTRUCTOR.escena.add(peonesBlancosMalla);
-      }
+      }*/
+    
+    CONSTRUCTOR.PeonesBlancos = function (texturaBlanco){
+    for(var i=0;i<8;i++){
+      var peonesBlancos= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
+      peonesBlancos.position.x=-35+(i*10);
+      peonesBlancos.position.y=2.5;
+      peonesBlancos.position.z=-25;
+      peonesBlancos.scale.x=0.2;
+      peonesBlancos.scale.y=0.2;
+      peonesBlancos.scale.z=0.2;
+      var material = new THREE.MeshLambertMaterial({map: texturaBlanco});
+      var peonesBlancosMalla = new THREE.Mesh(peonesBlancos,material);
+    }
+    }
+
     
 
     //--------------- CAMARA ---------------
@@ -196,7 +211,7 @@ CONSTRUCTOR.setup = function(){
     CONSTRUCTOR.escena.add(torre2);
     CONSTRUCTOR.escena.add(torre3);
     CONSTRUCTOR.escena.add(torre4);
-    CONSTRUCTOR.escena.add(peon);
+    CONSTRUCTOR.
     CONSTRUCTOR.escena.add(luz);
     CONSTRUCTOR.renderizador.shadowMapEnabled = true;
     luz.castShadow =true;

@@ -179,17 +179,18 @@ CONSTRUCTOR.setup = function(){
     
     CONSTRUCTOR.PeonesBlancos = function (texturaBlanco){
     for(var i=0;i<8;i++){
-      var peonesBlancos= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-      peonesBlancos.position.x=-35+(i*10);
-      peonesBlancos.position.y=2.5;
-      peonesBlancos.position.z=-25;
-      peonesBlancos.scale.x=0.2;
-      peonesBlancos.scale.y=0.2;
-      peonesBlancos.scale.z=0.2;
+      var peonB= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
+      peonB.traslate(-35+(i*10),2.5,-25);
+      //peonesBlancos.position.x=-35+(i*10);
+      //peonesBlancos.position.y=2.5;
+      //peonesBlancos.position.z=-25;
+      peonB.scale.x=0.2;
+      peonB.scale.y=0.2;
+      peonB.scale.z=0.2;
       var material = new THREE.MeshLambertMaterial({map: texturaBlanco});
-      var peonesBlancosMalla = new THREE.Mesh(peonesBlancos,material);
-     }
-       CONSTRUCTOR.escena.add(peonesBlancosMalla);
+      var peonBMalla = new THREE.Mesh(peonB,material);
+      CONSTRUCTOR.escena.add(peonBMalla);
+    }
     }
 
     

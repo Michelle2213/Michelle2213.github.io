@@ -165,34 +165,13 @@ CONSTRUCTOR.setup = function(){
     peon1.scale.y=0.2;
     peon1.scale.z=0.2;
     
-      /*for(var i=0;i<8;i++){
-      var peon= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-      peon.position.x=-35+(i*10);
-      peon.position.y=2.5;
-      peon.position.z=-25;
-      peon.scale.x=0.2;
-      peon.scale.y=0.2;
-      peon.scale.z=0.2;
-      var peonesBlancosMalla = new THREE.Mesh(peon);
-      CONSTRUCTOR.escena.add(peonesBlancosMalla);
-      }*/
-    
-    /*CONSTRUCTOR.PeonesBlancos = function (texturaBlanco){
-    for(var i=0;i<8;i++){
-      var peonB= new CONSTRUCTOR.Peon(CONSTRUCTOR.peonBlanco);
-      //peonB.traslate(-35+(i*10),2.5,-25);
-      peonB.position.x=-35+(i*10);
-      peonB.position.y=2.5;
-      peonB.position.z=-25;
-      peonB.scale.x=0.2;
-      peonB.scale.y=0.2;
-      peonB.scale.z=0.2;
-      var material = new THREE.MeshLambertMaterial({map: texturaBlanco});
-      var peonBMalla = new THREE.Mesh(peonB,material);
-      CONSTRUCTOR.escena.add(peonBMalla);
-    }
-    }*/
-
+    var peon2= new CONSTRUCTOR.Peon(CONSTRUCTOR.torreNegra);
+    peon2.position.x=35;
+    peon2.position.y=2.5;
+    peon2.position.z=-25;
+    peon2.scale.x=0.2;
+    peon2.scale.y=0.2;
+    peon2.scale.z=0.2;
     
 
     //--------------- CAMARA ---------------

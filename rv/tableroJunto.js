@@ -193,6 +193,7 @@ CONSTRUCTOR.setup = function(){
     CONSTRUCTOR.escena.add(torre3);
     CONSTRUCTOR.escena.add(torre4);
     CONSTRUCTOR.escena.add(peon1);
+    CONSTRUCTOR.escena.add(peon2);
     CONSTRUCTOR.escena.add(luz);
     CONSTRUCTOR.renderizador.shadowMapEnabled = true;
     luz.castShadow =true;
@@ -203,7 +204,7 @@ var setupDone=false;
 
 CONSTRUCTOR.loop = function(){
   requestAnimationFrame( CONSTRUCTOR.loop);
-  if(CONSTRUCTOR.madera!==undefined && CONSTRUCTOR.torreBlanca!==undefined && CONSTRUCTOR.marmolBlanco!==undefined && CONSTRUCTOR.marmolNegro!==undefined && !setupDone){
+  if(CONSTRUCTOR.mpeonBlanco!==undefined && CONSTRUCTOR.madera!==undefined && CONSTRUCTOR.torreBlanca!==undefined && CONSTRUCTOR.marmolBlanco!==undefined && CONSTRUCTOR.marmolNegro!==undefined && !setupDone){
       CONSTRUCTOR.setup();
   }
    CONSTRUCTOR.renderizador.render(CONSTRUCTOR.escena, CONSTRUCTOR.camara);

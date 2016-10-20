@@ -23,7 +23,6 @@ function setup(){
    renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
    renderizador.setSize(window.innerWidth,window.innerHeight);
   }
-}
 
 function loop(){
   requestAnimationFrame(Pieza.loop);

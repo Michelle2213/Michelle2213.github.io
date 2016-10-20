@@ -26,13 +26,11 @@ function setup(){
 
 function loop(){
   requestAnimationFrame(Pieza.loop);
- 
-  if(Pieza.malla !== undefined){
-    Pieza.malla.rotateX(0.01);
-    Pieza.malla.rotateY(0.01);
-    }
-  Pieza.renderizador.render(Pieza.escena, Pieza.camara);
+  
+  pieza.rotateY(0.01);
+  
+  renderizador.render(escena, camara);
 }
 
-Pieza.setup();
-Pieza.loop();
+setup();
+loop();

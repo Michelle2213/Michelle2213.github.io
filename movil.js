@@ -32,7 +32,7 @@ var b=0;
 function loop(){
   requestAnimationFrame(loop);
   
-  pieza.rotateY(0.1);
+  //pieza.rotateY(0.1);
   pieza.piernaIzq.rotateZ(a*b);
   if (a>=2){
     b=-1;}

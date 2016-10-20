@@ -25,12 +25,18 @@ function setup(){
    renderizador.setSize(500,500);
   document.body.appendChild(renderizador.domElement);
   }
+  
+var a=0;
 
 function loop(){
   requestAnimationFrame(loop);
   
   pieza.rotateY(0.1);
-  pieza.piernaIzq.rotateZ(0.1);
+  pieza.piernaIzq.rotateZ(var a);
+  if a>=2{
+    a=a-0.1;}
+  else{
+    a=a+0.1;}
   
   renderizador.render(escena, camara);
 }

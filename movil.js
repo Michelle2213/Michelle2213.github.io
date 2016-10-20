@@ -33,7 +33,7 @@ function loop(){
   
   pieza.rotateY(0.1);
   pieza.piernaIzq.rotateZ(a);
-  if a>=2{
+  if (a>=2){
     a=a-0.1;}
   else{
     a=a+0.1;}

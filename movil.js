@@ -36,7 +36,8 @@ function loop(){
   pieza.piernaIzq.rotateZ(0.01*b);
   if (a>=200){
     b=-1;
-    a=0;}
+    if(a>=400){
+      a=0;}}
   else{
     b=1;}
   

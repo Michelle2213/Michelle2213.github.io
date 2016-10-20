@@ -16,12 +16,14 @@ Pieza.prototype=new THREE.Object3D;
 function setup(){
   pieza= new Pieza();
   escena= new THREE.Scene();
+  escena.add(pieza);
    
-   camara= new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-   camara.position.z=5;
+   camara= new THREE.PerspectiveCamera();
+   camara.position.z=50;
    
    renderizador= new THREE.WebGLRenderer();
-   renderizador.setSize(window.innerWidth,window.innerHeight);
+   renderizador.setSize(500,500);
+  document.body.appendChild(renderizador.domElement);
   }
 
 function loop(){

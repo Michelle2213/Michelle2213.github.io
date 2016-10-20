@@ -26,15 +26,15 @@ function setup(){
   document.body.appendChild(renderizador.domElement);
   }
   
-var a=0.01;
+var a=0;
 var b=0;
 
 function loop(){
   requestAnimationFrame(loop);
-  
+  a=a+1;
   //pieza.rotateY(0.1);
-  pieza.piernaIzq.rotateZ(a*b);
-  if (a>=2){
+  pieza.piernaIzq.rotateZ(0.01*b);
+  if (a>=30){
     b=-1;}
   else{
     b=1;}

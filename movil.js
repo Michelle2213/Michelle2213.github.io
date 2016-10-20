@@ -20,7 +20,7 @@ function setup(){
    camara= new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000 );
    camara.position.z=5;
    
-   renderizador= new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
+   renderizador= new THREE.WebGLRenderer();
    renderizador.setSize(window.innerWidth,window.innerHeight);
   }
 

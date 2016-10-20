@@ -25,7 +25,7 @@ function setup(){
   }
 
 function loop(){
-  requestAnimationFrame(Pieza.loop);
+  requestAnimationFrame(loop);
   
   pieza.rotateY(0.01);
   

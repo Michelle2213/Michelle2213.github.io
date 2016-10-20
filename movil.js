@@ -26,17 +26,18 @@ function setup(){
   document.body.appendChild(renderizador.domElement);
   }
   
-var a=0;
+var a=0.01;
+var b=0;
 
 function loop(){
   requestAnimationFrame(loop);
   
   pieza.rotateY(0.1);
-  pieza.piernaIzq.rotateZ(a);
+  pieza.piernaIzq.rotateZ(a*b);
   if (a>=2){
-    a=a-0.1;}
+    b=-1;}
   else{
-    a=a+0.1;}
+    b=1;}
   
   renderizador.render(escena, camara);
 }

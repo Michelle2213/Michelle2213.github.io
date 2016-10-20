@@ -35,7 +35,8 @@ function loop(){
   //pieza.rotateY(0.1);
   pieza.piernaIzq.rotateZ(0.01*b);
   if (a>=30){
-    b=-1;}
+    b=-1;
+    a=0;}
   else{
     b=1;}
   

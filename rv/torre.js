@@ -36,7 +36,7 @@ Rey.merge(horizontalMalla.geometry, horizontalMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var ReyMalla= new THREE.Mesh(Rey, material);
 
-ReyMalla.rotateX(Math.PI/6);
+ReyMalla.rotateX(Math.PI/4);
 var escena= new THREE.Scene();
 escena.add(ReyMalla);
 

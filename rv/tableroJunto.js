@@ -99,20 +99,21 @@ CONSTRUCTOR.Rey=function(textura){
     
     var baseRey= new THREE.LatheGeometry(puntosrey);
     var baseReyMalla= new THREE.Mesh( baseRey);
+    
+    var reyForma= new THREE.Geometry();
 
+    reyForma.merge(baseReyMalla.geometry, baseReyMalla.matrix);
+    
     var vertical= new THREE.BoxGeometry(10,20,0);
     vertical.translate(0,110,0);
     var verticalMalla= new THREE.Mesh(vertical);
-
+    reyForma.merge(verticalMalla.geometry, verticalMalla.matrix);
+    
     var horizontal= new THREE.BoxGeometry(20,10,10);
     horizontal.translate(0,110,0);
     var horizontalMalla= new THREE.Mesh(horizontal);
-
-    var reyForma= new THREE.Geometry();
-    reyForma.merge(baseReyMalla.geometry, baseReyMalla.matrix);
-    reyForma.merge(verticalMalla.geometry, verticalMalla.matrix);
     reyForma.merge(horizontalMalla.geometry, horizontalMalla.matrix);
-
+    
     THREE.Mesh.call(this, reyForma, new THREE.MeshLambertMaterial({map:textura}));
     this.castShadow=true;
     this.receiveShadow=true;
@@ -220,7 +221,7 @@ CONSTRUCTOR.setup = function(){
     peon2.scale.y=0.2;
     peon2.scale.z=0.2;
     
-    var rey1= new CONSTRUCTOR.Rey(CONSTRUCTOR.orreBlanca);
+    var rey1= new CONSTRUCTOR.Rey(CONSTRUCTOR.torreBlanca);
     rey1.position.x=-5;
     rey1.position.y=2.5;
     rey1.position.z=-35;

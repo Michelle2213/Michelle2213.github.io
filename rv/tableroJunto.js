@@ -223,7 +223,7 @@ CONSTRUCTOR.setup = function(){
     peon2.scale.z=0.2;
     
     var rey1= new CONSTRUCTOR.Rey(CONSTRUCTOR.torreBlanca);
-    rey1.position.x=5;
+    rey1.position.x=-5;
     rey1.position.y=2.5;
     rey1.position.z=-35;
     rey1.scale.x=0.2;
@@ -231,7 +231,7 @@ CONSTRUCTOR.setup = function(){
     rey1.scale.z=0.2;
     
     var rey2= new CONSTRUCTOR.Rey(CONSTRUCTOR.torreNegra);
-    rey2.position.x=5;
+    rey2.position.x=-5;
     rey2.position.y=2.5;
     rey2.position.z=35;
     rey2.scale.x=0.2;

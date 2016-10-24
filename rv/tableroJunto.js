@@ -104,7 +104,7 @@ CONSTRUCTOR.Rey=function(textura){
 
     reyForma.merge(baseReyMalla.geometry, baseReyMalla.matrix);
     
-    var vertical= new THREE.BoxGeometry(10,20,0);
+    var vertical= new THREE.BoxGeometry(10,20,10);
     vertical.translate(0,110,0);
     var verticalMalla= new THREE.Mesh(vertical);
     reyForma.merge(verticalMalla.geometry, verticalMalla.matrix);

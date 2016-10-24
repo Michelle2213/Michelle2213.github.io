@@ -6,8 +6,7 @@ puntos.push( new THREE.Vector2(20,10));
 puntos.push( new THREE.Vector2(15,10));
 puntos.push( new THREE.Vector2(15,15));
 puntos.push( new THREE.Vector2(10,15));
-puntos.push( new THREE.Vector2(5,25));
-puntos.push( new THREE.Vector2(5,60));
+puntos.push( new THREE.Vector2(10,60));
 puntos.push( new THREE.Vector2(20,60));
 puntos.push( new THREE.Vector2(20,65));
 puntos.push( new THREE.Vector2(10,65));
@@ -24,7 +23,7 @@ var vertical= new THREE.BoxGeometry(10,10,20);
 vertical.translate(0,105,0);
 var verticalMalla= new THREE.Mesh(vertical);
 
-var horizontal= new THREE.BoxGeometry(20,10,10);
+var horizontal= new THREE.BoxGeometry(10,20,10);
 horizontal.translate(0,105,0);
 var horizontalMalla= new THREE.Mesh(horizontal);
 

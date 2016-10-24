@@ -6,7 +6,7 @@ puntos.push( new THREE.Vector2(20,10));
 puntos.push( new THREE.Vector2(15,10));
 puntos.push( new THREE.Vector2(15,15));
 puntos.push( new THREE.Vector2(10,15));
-puntos.push( new THREE.Vector2(10,60));
+puntos.push( new THREE.Vector2(5,60));
 puntos.push( new THREE.Vector2(20,60));
 puntos.push( new THREE.Vector2(20,65));
 puntos.push( new THREE.Vector2(10,65));
@@ -19,11 +19,11 @@ puntos.push( new THREE.Vector2(20,100));
 var baseRey= new THREE.LatheGeometry(puntos);
 var baseReyMalla= new THREE.Mesh( baseRey);
 
-var vertical= new THREE.BoxGeometry(10,10,20);
+var vertical= new THREE.BoxGeometry(10,20,0);
 vertical.translate(0,105,0);
 var verticalMalla= new THREE.Mesh(vertical);
 
-var horizontal= new THREE.BoxGeometry(10,20,10);
+var horizontal= new THREE.BoxGeometry(20,10,10);
 horizontal.translate(0,105,0);
 var horizontalMalla= new THREE.Mesh(horizontal);
 

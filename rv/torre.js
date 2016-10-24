@@ -25,7 +25,7 @@ vertical.translate(0,105,0);
 var verticalMalla= new THREE.Mesh(vertical);
 
 var horizontal= new THREE.BoxGeometry(20,10,10);
-horizontal.translate(0,110,0);
+horizontal.translate(0,105,0);
 var horizontalMalla= new THREE.Mesh(horizontal);
 
 var Rey= new THREE.Geometry();

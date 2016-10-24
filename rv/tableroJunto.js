@@ -138,8 +138,8 @@ CONSTRUCTOR.Tablero = function (texturaBlanco, texturaNegro,texturaMadera){
         }
         var cuboMalla = new THREE.Mesh(cuboForma,material);
         color=color+1;
-        cuboMalla.rotateX(-Math.PI/2);
-        cuboMalla.rotateY(-Math.PI/2);
+        cuboMalla.rotateX(-Math.PI);
+        //cuboMalla.rotateY(-Math.PI/2);
           cuboMalla.receiveShadow=true;
         CONSTRUCTOR.escena.add(cuboMalla);
       }

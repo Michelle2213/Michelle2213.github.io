@@ -15,6 +15,7 @@ puntos.push( new THREE.Vector2(15,70));
 puntos.push( new THREE.Vector2(15,80));
 puntos.push( new THREE.Vector2(10,80));
 puntos.push( new THREE.Vector2(20,100));
+puntos.push( new THREE.Vector2(0,100));
 
 var baseRey= new THREE.LatheGeometry(puntos);
 var baseReyMalla= new THREE.Mesh( baseRey);
@@ -36,7 +37,7 @@ Rey.merge(horizontalMalla.geometry, horizontalMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var ReyMalla= new THREE.Mesh(Rey, material);
 
-ReyMalla.rotateX(Math.PI/4);
+ReyMalla.rotateX(Math.PI/2);
 var escena= new THREE.Scene();
 escena.add(ReyMalla);
 

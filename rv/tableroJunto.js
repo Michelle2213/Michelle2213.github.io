@@ -139,6 +139,7 @@ CONSTRUCTOR.Tablero = function (texturaBlanco, texturaNegro,texturaMadera){
         var cuboMalla = new THREE.Mesh(cuboForma,material);
         color=color+1;
         cuboMalla.rotateX(-Math.PI/2);
+        cuboMalla.rotateY(-Math.PI/2);
           cuboMalla.receiveShadow=true;
         CONSTRUCTOR.escena.add(cuboMalla);
       }
@@ -149,7 +150,7 @@ CONSTRUCTOR.Tablero = function (texturaBlanco, texturaNegro,texturaMadera){
     bordeForma.translate(0,0,-5);
     var bordeMaterial = new THREE.MeshLambertMaterial({map:texturaMadera});
     var bordeMalla = new THREE.Mesh(bordeForma,bordeMaterial);
-    bordeMalla.rotateX(-Math.PI);
+    bordeMalla.rotateX(-Math.PI/2);
     bordeMalla.receiveShadow=true;
     CONSTRUCTOR.escena.add(bordeMalla);
 }

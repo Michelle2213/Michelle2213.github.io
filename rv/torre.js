@@ -7,27 +7,39 @@ puntos.push( new THREE.Vector2(15,10));
 puntos.push( new THREE.Vector2(15,15));
 puntos.push( new THREE.Vector2(10,15));
 puntos.push( new THREE.Vector2(5,25));
-puntos.push( new THREE.Vector2(5,35));
-puntos.push( new THREE.Vector2(15,35));
-puntos.push( new THREE.Vector2(0,40));
+puntos.push( new THREE.Vector2(5,60));
+puntos.push( new THREE.Vector2(20,60));
+puntos.push( new THREE.Vector2(20,65));
+puntos.push( new THREE.Vector2(10,65));
+puntos.push( new THREE.Vector2(10,70));
+puntos.push( new THREE.Vector2(15,70));
+puntos.push( new THREE.Vector2(15,80));
+puntos.push( new THREE.Vector2(10,80));
+puntos.push( new THREE.Vector2(20,100));
 
-var baseforma= new THREE.LatheGeometry(puntos);
-var basemalla= new THREE.Mesh( baseforma);
+var baseRey= new THREE.LatheGeometry(puntos);
+var baseReyMalla= new THREE.Mesh( baseRey);
 
-var esfera= new THREE.SphereGeometry(10);
-esfera.translate(0,45,0);
-var esferamalla= new THREE.Mesh(esfera);
+var vertical= new THREE.BoxGeometry(10,10,20);
+vertical.translate(0,100,0);
+var verticalMalla= new THREE.Mesh(vertical);
 
-var torre= new THREE.Geometry();
-torre.merge(basemalla.geometry, basemalla.matrix);
-torre.merge(esferamalla.geometry, esferamalla.matrix);
+var horizontal= new THREE.BoxGeometry(20,10,10);
+horizontal.translate(0,110,0);
+var horizontalMalla= new THREE.Mesh(horizontal);
+
+var Rey= new THREE.Geometry();
+Rey.merge(baseReyMalla.geometry, baseReyMalla.matrix);
+Rey.merge(verticalMalla.geometry, verticalMalla.matrix);
+Rey.merge(horizontalMalla.geometry, horizontalMalla.matrix);
+
 
 var material= new THREE.MeshNormalMaterial();
-var torremalla= new THREE.Mesh(torre, material);
+var ReyMalla= new THREE.Mesh(Rey, material);
 
 //torremalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
-escena.add(torremalla);
+escena.add(ReyMalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z= 300;

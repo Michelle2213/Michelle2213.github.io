@@ -21,11 +21,11 @@ var baseRey= new THREE.LatheGeometry(puntos);
 var baseReyMalla= new THREE.Mesh( baseRey);
 
 var vertical= new THREE.BoxGeometry(10,10,20);
-vertical.translate(0,100,0);
+vertical.translate(0,110,0);
 var verticalMalla= new THREE.Mesh(vertical);
 
 var horizontal= new THREE.BoxGeometry(20,10,10);
-horizontal.translate(0,110,0);
+horizontal.translate(0,120,0);
 var horizontalMalla= new THREE.Mesh(horizontal);
 
 var Rey= new THREE.Geometry();

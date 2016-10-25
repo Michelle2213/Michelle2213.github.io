@@ -93,6 +93,7 @@ function Agent(x=0, y=0){
       entorno.add(new Pared(1,7,-1));
       entorno.add(new Pared(1,-7,-1));
       entorno.add(new Pelota(0.5));
+      entorno.add(new Pelota(0.8,2,0.8));
       entorno.add(camara);
    
       renderer= new THREE.WebGLRenderer();

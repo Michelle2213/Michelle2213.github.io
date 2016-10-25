@@ -107,4 +107,7 @@ function Agent(x=0, y=0){
         entorno.act();
         renderer.render(entorno,camara);
     }
+  
+  setup();
+  loop();
     

@@ -55,7 +55,7 @@ function Agent(x=0, y=0){
     this.sensor.set(this.position, new THREE.Vector3(-1,0,0));
     var obstacle2= this.sensor.intersectObjects(environment.children, true);
     
-    if((obstacle1.length > 0 && (obstacle1[0].distance <= this.radius)) || (obstacle2.length > 0 && (obstacle2[0].distance <= this.radius))
+    if((obstacle1.length > 0 && (obstacle1[0].distance <= this.radius)) || (obstacle2.length > 0 && (obstacle2[0].distance <= this.radius)))
        this.colision=1;
     else
        this.colision=0;

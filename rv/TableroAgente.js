@@ -252,7 +252,7 @@ function TexturaSetup(){
                   function(textura){ TEXTURAS.marmolBlanco = textura;});
     cargador.load("texturaMarmolNegro.jpg",
                   function(textura){ TEXTURAS.marmolNegro = textura;});
-    cargador.load("texturaMadera.jpg",
+    cargador.load("texturaMadera.JPG",
                   function(textura){ TEXTURAS.madera = textura;});
     
 }

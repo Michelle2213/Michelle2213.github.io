@@ -364,13 +364,14 @@ function movement(pieza){
     var b=zGoal-m*xGoal;
     if((pieza.position.x!==xGoal || pieza.position.z!==zGoal) && banderaEvento==0){
         if(pieza.position.x!==xGoal){
-            if(pieza.position.x<xGoal)
+            if(pieza.position.x<xGoal){
                 pieza.position.x+=0.1;
-            else if(pieza.position.x!==xGoal)
+                pieza.position.z=m*pieza.position.x+b;}
+            else if(pieza.position.x!==xGoal){
                 pieza.position.x-=0.1;
+                pieza.position.z=m*pieza.position.x+b;}
             else if(pieza.position.x===xGoal)
                 pieza.position.z+=0.1;
-            pieza.position.z=m*pieza.position.x+b;
         }
         else if(pieza.position.z!==zGoal){
             if(pieza.position.z<zGoal)

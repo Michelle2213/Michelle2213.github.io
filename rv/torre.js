@@ -17,33 +17,29 @@ puntos.push( new THREE.Vector2(10,80));
 puntos.push( new THREE.Vector2(20,100));
 puntos.push( new THREE.Vector2(0,100));
 
+var puntos2=[];
+
 for ( var i = 0; i < 10; i ++ ) {
-	points.push( new THREE.Vector2( Math.sin( i ) * 10 + 20, ( i - 5 ) * 100 ) );
+	points2.push( new THREE.Vector2( Math.sin( i ) * 10 + 20, ( i - 5 ) * 100 ) );
 }
 
-var baseRey= new THREE.LatheGeometry(puntos);
-var baseReyMalla= new THREE.Mesh( baseRey);
+var baseAlfil= new THREE.LatheGeometry(puntos);
+var baseAlfilMalla= new THREE.Mesh(baseAlfil);
 
-var vertical= new THREE.BoxGeometry(10,20,0);
-vertical.translate(0,110,0);
-var verticalMalla= new THREE.Mesh(vertical);
+var gorro= new THREE.LatheGeometry(puntos2);
+gorro.translate(0,110,0);
+var gorroMalla= new THREE.Mesh(gorro);
 
-var horizontal= new THREE.BoxGeometry(20,10,10);
-horizontal.translate(0,110,0);
-var horizontalMalla= new THREE.Mesh(horizontal);
-
-var Rey= new THREE.Geometry();
-Rey.merge(baseReyMalla.geometry, baseReyMalla.matrix);
-Rey.merge(verticalMalla.geometry, verticalMalla.matrix);
-Rey.merge(horizontalMalla.geometry, horizontalMalla.matrix);
-
+var Alfil= new THREE.Geometry();
+Alfil.merge(baseAlfilMalla.geometry, baseAlfilMalla.matrix);
+Alfil.merge(gorroMalla.geometry, gorroMalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
-var ReyMalla= new THREE.Mesh(Rey, material);
+var ReyMalla= new THREE.Mesh(Alfil, material);
 
-ReyMalla.rotateX(Math.PI/6);
+AlfilMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
-escena.add(ReyMalla);
+escena.add(AlfilMalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z= 300;

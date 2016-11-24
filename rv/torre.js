@@ -18,7 +18,7 @@ puntos.push( new THREE.Vector2(20,100));
 puntos.push( new THREE.Vector2(0,100));
 
 for ( var i = 0; i < 10; i ++ ) {
-	points.push( new THREE.Vector2( Math.sin( i ) * 10 + 100, ( i - 5 ) * 2 ) );
+	points.push( new THREE.Vector2( Math.sin( i ) * 10 + 20, ( i - 5 ) * 100 ) );
 }
 
 var baseRey= new THREE.LatheGeometry(puntos);

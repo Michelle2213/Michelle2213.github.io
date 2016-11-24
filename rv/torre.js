@@ -35,7 +35,7 @@ Alfil.merge(baseAlfilMalla.geometry, baseAlfilMalla.matrix);
 Alfil.merge(gorroMalla.geometry, gorroMalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
-var ReyMalla= new THREE.Mesh(Alfil, material);
+var AlfilMalla= new THREE.Mesh(Alfil, material);
 
 AlfilMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();

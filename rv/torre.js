@@ -19,8 +19,8 @@ puntos.push( new THREE.Vector2(0,100));
 
 var puntos2=[];
 
-for ( var i = 0; i < 15; i ++ ) {
-	puntos2.push( new THREE.Vector2( Math.sin(i*0.01 -40) * 30, i));
+for ( var i = 0; i < 25; i ++ ) {
+	puntos2.push( new THREE.Vector2( Math.sin(i*0.05 -40) * 30, i));
 }
 
 var baseAlfil= new THREE.LatheGeometry(puntos);

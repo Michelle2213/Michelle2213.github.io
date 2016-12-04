@@ -30,7 +30,7 @@ Caballo.merge(perfilCaballoMalla.geometry, perfilCaballoMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var CaballoMalla= new THREE.Mesh(Caballo, material);
 
-//CaballoMalla.rotateX(Math.PI/6);
+CaballoMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(CaballoMalla);
 

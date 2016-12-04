@@ -12,9 +12,9 @@ puntos.push( new THREE.Vector2(20,45));
 puntos.push( new THREE.Vector2(10,45));
 puntos.push( new THREE.Vector2(10,50));
 puntos.push( new THREE.Vector2(15,50));
-puntos.push( new THREE.Vector2(15,60));
-puntos.push( new THREE.Vector2(10,60));
-puntos.push( new THREE.Vector2(20,80));
+puntos.push( new THREE.Vector2(5,70));
+puntos.push( new THREE.Vector2(15,70));
+puntos.push( new THREE.Vector2(15,80));
 puntos.push( new THREE.Vector2(0,80));
 
 var puntos2=[];

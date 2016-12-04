@@ -24,7 +24,7 @@ var Reina= new THREE.Geometry();
       picoForma.translate(13*(Math.sin(Math.PI*2/6*i)),110,13*(Math.cos(Math.PI*2/6*i)));
     var picoMalla =new THREE.Mesh(picoForma); 
     var picoPunta= new THREE.SphereGeometry(3);
-      picoPunta.translate(13*(Math.sin(Math.PI*2/6*i)),125,13*(Math.cos(Math.PI*2/6*i)));
+      picoPunta.translate(13*(Math.sin(Math.PI*2/6*i)),122,13*(Math.cos(Math.PI*2/6*i)));
     var picoPuntaMalla =new THREE.Mesh(picoPunta); 
       Reina.merge(picoMalla.geometry, picoMalla.matrix);
       Reina.merge(picoPuntaMalla.geometry, picoPuntaMalla.matrix);

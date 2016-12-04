@@ -41,7 +41,7 @@ Alfil.merge(puntitaAlfilMalla.geometry, puntitaAlfilMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var AlfilMalla= new THREE.Mesh(Alfil, material);
 
-//AlfilMalla.rotateX(Math.PI/6);
+AlfilMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(AlfilMalla);
 

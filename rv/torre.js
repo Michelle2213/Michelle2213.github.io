@@ -20,14 +20,14 @@ puntos.push( new THREE.Vector2(0,100));
 var puntos2=[];
 
 for ( var i = 0; i < 47; i ++ ) {
-	puntos2.push( new THREE.Vector2( Math.sin(i*0.05 -30) * 25, i));
+	puntos2.push( new THREE.Vector2( Math.sin(i*0.05 -40) * 25, i));
 }
 
 var baseAlfil= new THREE.LatheGeometry(puntos);
 var baseAlfilMalla= new THREE.Mesh(baseAlfil);
 
 var gorro= new THREE.LatheGeometry(puntos2);
-gorro.translate(0,110,0);
+gorro.translate(0,100,0);
 var gorroMalla= new THREE.Mesh(gorro);
 
 var Alfil= new THREE.Geometry();

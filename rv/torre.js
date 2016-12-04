@@ -30,8 +30,8 @@ var gorroAlfil= new THREE.LatheGeometry(puntos2);
 gorroAlfil.translate(0,80,0);
 var gorroAlfilMalla= new THREE.Mesh(gorroAlfil);
 
-var puntitaAlfil = new THREE.SphereGeometry( 10 );
-puntitaAlfil.translate(0,120,0);
+var puntitaAlfil = new THREE.SphereGeometry( 5 );
+puntitaAlfil.translate(0,130,0);
 var puntitaAlfilMalla= new THREE.Mesh(puntitaAlfil);
 
 var Alfil= new THREE.Geometry();

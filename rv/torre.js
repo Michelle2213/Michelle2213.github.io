@@ -45,7 +45,7 @@ Reina.merge(baseReinaMalla.geometry, baseReinaMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var ReinaMalla= new THREE.Mesh(Reina, material);
 
-AlfilMalla.rotateX(Math.PI/6);
+ReinaMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(ReinaMalla);
 

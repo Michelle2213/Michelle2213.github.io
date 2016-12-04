@@ -12,7 +12,7 @@ puntos.push( new THREE.Vector2(25,65));
 puntos.push( new THREE.Vector2(5,65));
 puntos.push( new THREE.Vector2(5,70));
 puntos.push( new THREE.Vector2(15,70));
-puntos.push( new THREE.Vector2(15,79));
+puntos.push( new THREE.Vector2(15,77));
 puntos.push( new THREE.Vector2(25,80));
 puntos.push( new THREE.Vector2(0,80));
 

@@ -19,7 +19,7 @@ puntos.push( new THREE.Vector2(0,100));
 
 var puntos2=[];
 
-for ( var i = 0; i < 50; i ++ ) {
+for ( var i = 0; i < 47; i ++ ) {
 	puntos2.push( new THREE.Vector2( Math.sin(i*0.05 -40) * 25, i));
 }
 
@@ -37,7 +37,7 @@ Alfil.merge(gorroMalla.geometry, gorroMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var AlfilMalla= new THREE.Mesh(Alfil, material);
 
-AlfilMalla.rotateX(Math.PI/6);
+//AlfilMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(AlfilMalla);
 

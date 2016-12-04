@@ -38,7 +38,7 @@ var baseReinaMalla= new THREE.Mesh(baseReina);
 //var puntitaAlfilMalla= new THREE.Mesh(puntitaAlfil);
 
 
-Reina.merge(baseAlfilMalla.geometry, baseAlfilMalla.matrix);
+Reina.merge(baseReinaMalla.geometry, baseReinaMalla.matrix);
 //Alfil.merge(gorroAlfilMalla.geometry, gorroAlfilMalla.matrix);
 //Alfil.merge(puntitaAlfilMalla.geometry, puntitaAlfilMalla.matrix);
 

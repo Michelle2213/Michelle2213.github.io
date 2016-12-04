@@ -6,16 +6,16 @@ puntos.push( new THREE.Vector2(20,10));
 puntos.push( new THREE.Vector2(15,10));
 puntos.push( new THREE.Vector2(15,15));
 puntos.push( new THREE.Vector2(10,15));
-puntos.push( new THREE.Vector2(5,60));
-puntos.push( new THREE.Vector2(20,60));
-puntos.push( new THREE.Vector2(20,65));
-puntos.push( new THREE.Vector2(10,65));
-puntos.push( new THREE.Vector2(10,70));
-puntos.push( new THREE.Vector2(15,70));
-puntos.push( new THREE.Vector2(15,80));
-puntos.push( new THREE.Vector2(10,80));
-puntos.push( new THREE.Vector2(20,100));
-puntos.push( new THREE.Vector2(0,100));
+puntos.push( new THREE.Vector2(5,40));
+puntos.push( new THREE.Vector2(20,40));
+puntos.push( new THREE.Vector2(20,45));
+puntos.push( new THREE.Vector2(10,45));
+puntos.push( new THREE.Vector2(10,50));
+puntos.push( new THREE.Vector2(15,50));
+puntos.push( new THREE.Vector2(15,60));
+puntos.push( new THREE.Vector2(10,60));
+puntos.push( new THREE.Vector2(20,80));
+puntos.push( new THREE.Vector2(0,80));
 
 var puntos2=[];
 
@@ -27,7 +27,7 @@ var baseAlfil= new THREE.LatheGeometry(puntos);
 var baseAlfilMalla= new THREE.Mesh(baseAlfil);
 
 var gorro= new THREE.LatheGeometry(puntos2);
-gorro.translate(0,100,0);
+gorro.translate(0,80,0);
 var gorroMalla= new THREE.Mesh(gorro);
 
 var Alfil= new THREE.Geometry();

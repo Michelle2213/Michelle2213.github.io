@@ -1,49 +1,53 @@
-var puntos= [];
+var puntosreina= [];
 
-puntos.push( new THREE.Vector2(0,0));
-puntos.push( new THREE.Vector2(20,0));
-puntos.push( new THREE.Vector2(20,10));
-puntos.push( new THREE.Vector2(15,10));
-puntos.push( new THREE.Vector2(15,15));
-puntos.push( new THREE.Vector2(10,15));
-puntos.push( new THREE.Vector2(5,60));
-puntos.push( new THREE.Vector2(20,60));
-puntos.push( new THREE.Vector2(25,65));
-puntos.push( new THREE.Vector2(5,65));
-puntos.push( new THREE.Vector2(5,70));
-puntos.push( new THREE.Vector2(15,70));
-puntos.push( new THREE.Vector2(15,77));
-puntos.push( new THREE.Vector2(25,80));
-puntos.push( new THREE.Vector2(0,80));
+    puntosreina.push( new THREE.Vector2(0,0));
+    puntosreina.push( new THREE.Vector2(20,0));
+    puntosreina.push( new THREE.Vector2(20,10));
+    puntosreina.push( new THREE.Vector2(15,10));
+    puntosreina.push( new THREE.Vector2(15,15));
+    puntosreina.push( new THREE.Vector2(10,15));
+    puntosreina.push( new THREE.Vector2(5,60));
+    puntosreina.push( new THREE.Vector2(20,60));
+    puntosreina.push( new THREE.Vector2(20,65));
+    puntosreina.push( new THREE.Vector2(10,65));
+    puntosreina.push( new THREE.Vector2(10,70));
+    puntosreina.push( new THREE.Vector2(15,70));
+    puntosreina.push( new THREE.Vector2(15,80));
+    puntosreina.push( new THREE.Vector2(10,80));
+    puntosreina.push( new THREE.Vector2(20,100));
+    puntosreina.push( new THREE.Vector2(0,100));
 
-var puntos2=[];
+var Reina= new THREE.Geometry();
 
-for ( var i = 0; i < 47; i ++ ) {
-	puntos2.push( new THREE.Vector2( Math.sin(i*0.05 -40) * 25, i));
-}
+    for(var i=0; i<=6; i++){
+    var picoForma = new THREE.ConeGeometry( 5, 10 );
+      picoForma.translate(13*(Math.sin(Math.PI*2/6*i)),100,13*(Math.cos(Math.PI*2/6*i)));
+    var picoMalla =new THREE.Mesh(picoForma); 
+    var picoPunta= new THREE.SphereGeometry(3);
+      picoPunta.translate(13*(Math.sin(Math.PI*2/6*i)),100,13*(Math.cos(Math.PI*2/6*i)));
+    var picoPuntaMalla =new THREE.Mesh(picoPuntaForma); 
+      Reina.merge(picoMalla.geometry, picoMalla.matrix);
+      Reina.merge(picoPuntaMalla.geometry, picoPuntaMalla.matrix);
+    }
 
-var baseAlfil= new THREE.LatheGeometry(puntos);
-var baseAlfilMalla= new THREE.Mesh(baseAlfil);
+var baseReina= new THREE.LatheGeometry(puntosreina);
+var baseReinaMalla= new THREE.Mesh(baseReina);
 
-var gorroAlfil= new THREE.LatheGeometry(puntos2);
-gorroAlfil.translate(0,80,0);
-var gorroAlfilMalla= new THREE.Mesh(gorroAlfil);
+//var puntitaAlfil = new THREE.SphereGeometry( 5 );
+//puntitaAlfil.translate(0,130,0);
+//var puntitaAlfilMalla= new THREE.Mesh(puntitaAlfil);
 
-var puntitaAlfil = new THREE.SphereGeometry( 5 );
-puntitaAlfil.translate(0,130,0);
-var puntitaAlfilMalla= new THREE.Mesh(puntitaAlfil);
 
-var Alfil= new THREE.Geometry();
-Alfil.merge(baseAlfilMalla.geometry, baseAlfilMalla.matrix);
-Alfil.merge(gorroAlfilMalla.geometry, gorroAlfilMalla.matrix);
-Alfil.merge(puntitaAlfilMalla.geometry, puntitaAlfilMalla.matrix);
+Reina.merge(baseAlfilMalla.geometry, baseAlfilMalla.matrix);
+//Alfil.merge(gorroAlfilMalla.geometry, gorroAlfilMalla.matrix);
+//Alfil.merge(puntitaAlfilMalla.geometry, puntitaAlfilMalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
-var AlfilMalla= new THREE.Mesh(Alfil, material);
+var ReinaMalla= new THREE.Mesh(Reina, material);
 
-AlfilMalla.rotateX(Math.PI/6);
+//AlfilMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
-escena.add(AlfilMalla);
+escena.add(ReinaMalla);
 
 var camara= new THREE.PerspectiveCamera();
 camara.position.z= 400;

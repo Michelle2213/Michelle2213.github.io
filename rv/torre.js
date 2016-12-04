@@ -26,13 +26,18 @@ for ( var i = 0; i < 47; i ++ ) {
 var baseAlfil= new THREE.LatheGeometry(puntos);
 var baseAlfilMalla= new THREE.Mesh(baseAlfil);
 
-var gorro= new THREE.LatheGeometry(puntos2);
-gorro.translate(0,80,0);
-var gorroMalla= new THREE.Mesh(gorro);
+var gorroAlfil= new THREE.LatheGeometry(puntos2);
+gorroAlfil.translate(0,80,0);
+var gorroAlfilMalla= new THREE.Mesh(gorroAlfil);
+
+var puntitaAlfil = new THREE.SphereGeometry( 10 );
+puntitaAlfil.translate(0,120,0);
+var puntitaAlfilMalla= new THREE.Mesh(puntitaAlfil);
 
 var Alfil= new THREE.Geometry();
 Alfil.merge(baseAlfilMalla.geometry, baseAlfilMalla.matrix);
-Alfil.merge(gorroMalla.geometry, gorroMalla.matrix);
+Alfil.merge(gorroAlfilMalla.geometry, gorroAlfilMalla.matrix);
+Alfil.merge(puntitaAlfilMalla.geometry, puntitaAlfilMalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var AlfilMalla= new THREE.Mesh(Alfil, material);

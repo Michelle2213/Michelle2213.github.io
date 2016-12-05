@@ -37,7 +37,7 @@ var baseCaballoMalla= new THREE.Mesh(baseCaballo);
 
 var Caballo= new THREE.Geometry();
 Caballo.merge(perfilCaballoMalla.geometry, perfilCaballoMalla.matrix);
-Alfil.merge(baseCaballoMalla.geometry, baseCaballoMalla.matrix);
+Caballo.merge(baseCaballoMalla.geometry, baseCaballoMalla.matrix);
 
 var material= new THREE.MeshNormalMaterial();
 var CaballoMalla= new THREE.Mesh(Caballo, material);

@@ -19,7 +19,7 @@ var shape= new THREE.Shape();
     shape.lineTo(28.3,0);
     shape.lineTo(7.7,0);
 
-var perfilCaballo= new THREE.ExtrudeGeometry(shape);
+var perfilCaballo= new THREE.ExtrudeGeometry(shape,5,3);
 perfilCaballo.translate(0,20,0);
 var perfilCaballoMalla= new THREE.Mesh(perfilCaballo);
 

@@ -42,12 +42,12 @@ Caballo.merge(baseCaballoMalla.geometry, baseCaballoMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var CaballoMalla= new THREE.Mesh(Caballo, material);
 
-CaballoMalla.rotateX(Math.PI/6);
+//CaballoMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(CaballoMalla);
 
 var camara= new THREE.PerspectiveCamera();
-camara.position.z= 1500;
+camara.position.z= 400;
 
 var renderizador= new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95);

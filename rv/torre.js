@@ -20,16 +20,16 @@ var shape= new THREE.Shape();
     shape.lineTo(7.7,0);
 
 var extrudeSettings = {
-	steps: 2,
-	amount: 3,
+	steps: 4,
+	amount: 10,
 	bevelEnabled: true,
-	bevelThickness: 1,
-	bevelSize: 1,
+	bevelThickness: 2,
+	bevelSize: 2,
 	bevelSegments: 1
 };
 
 var perfilCaballo= new THREE.ExtrudeGeometry(shape,extrudeSettings);
-perfilCaballo.translate(0,20,0);
+perfilCaballo.translate(-20,20,0);
 var perfilCaballoMalla= new THREE.Mesh(perfilCaballo);
 
 var puntoscaballo= [];

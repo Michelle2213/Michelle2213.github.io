@@ -29,7 +29,7 @@ var extrudeSettings = {
 };
 
 var perfilCaballo= new THREE.ExtrudeGeometry(shape,extrudeSettings);
-perfilCaballo.translate(-20,20,-5);
+perfilCaballo.translate(-20,15,-5);
 var perfilCaballoMalla= new THREE.Mesh(perfilCaballo);
 
 var puntoscaballo= [];
@@ -51,7 +51,7 @@ Caballo.merge(baseCaballoMalla.geometry, baseCaballoMalla.matrix);
 var material= new THREE.MeshNormalMaterial();
 var CaballoMalla= new THREE.Mesh(Caballo, material);
 
-CaballoMalla.rotateX(Math.PI/2);
+//CaballoMalla.rotateX(Math.PI/6);
 var escena= new THREE.Scene();
 escena.add(CaballoMalla);
 

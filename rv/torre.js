@@ -29,7 +29,7 @@ var extrudeSettings = {
 };
 
 var perfilCaballo= new THREE.ExtrudeGeometry(shape,extrudeSettings);
-perfilCaballo.translate(-20,20,0);
+perfilCaballo.translate(-20,20,5);
 var perfilCaballoMalla= new THREE.Mesh(perfilCaballo);
 
 var puntoscaballo= [];
